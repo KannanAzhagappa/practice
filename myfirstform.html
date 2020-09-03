@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <title>Kannan Azhagappa's Form Page</title>
+    
+    <head>
+
+        </style>
+    </head>
+
+    <body>
+
+        <h1 style="color:blue;">This is my first form and I want it to be a Login Form</h1>
+        <form>
+
+            Username: <input type="text" name="username"><br>
+            Password: <input type="password" id="password"><br>
+            <input type="checkbox" onclick="myFunction('password')">Show Password</input>
+
+            <p>Which language do you prefer coding in</p>
+            <input type="radio" name="program_selection" id="program_selection1" value="HTML">HTML</input>
+            <input type="radio" name="program_selection" id="program_selection2" value="Javascript">Javascript</input>
+            <input type="radio" name="program_selection" id="program_selection3" value="C#">C#</input><br>
+            <input type="checkbox" onclick="document.getElementById('program_selection1').checked = false;document.getElementById('program_selection2').checked = false;document.getElementById('program_selection3').checked = false;">Reset</input>
+        </form>
+
+        <script>
+            
+        function myFunction() {
+            var x = document.getElementById(input);
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }
+
+        </script>
+    </body>
+
+</html>
+

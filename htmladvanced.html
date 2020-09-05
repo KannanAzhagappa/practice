@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Kannan Azhagappa's Advanced HTML Stuff</title>
+        <meta name="Keywords" content="HTML, CSS and Javascript">
+        <meta name="Description" content="Content will revolve around basics to advanced Contents about HTML, CSS and Javascript">
+        <meta name="Author" content="Kannan Azhagappa">
+        <style>
+        </style>
+    </head>
+
+    <body>
+        <div id="div1">Hello Kannan</div>
+        <div id>Hello &lt;Kannan&gt;</div>
+        <script>
+            alert("Hello, this is my first alert via Javascript");
+            alert("Inner HTML for div1 is: " + document.getElementById("div1").innerHTML);
+            document.getElementById("div1").innerHTML="Hello World!!!";
+        </script>
+
+<form>
+    <label for="mynumber">Select a Number:</label>
+    <input type="range" min="10" max="100" step="10" id="mynumber">    
+
+    <label for="mynumber">Enter a Number:</label>
+    <input type="number" min="1000" max="10000" step="1000" id="mynumber">
+
+    <label for="mycolor">Select Color:</label>
+    <input type="color" value="#00ff00" id="mycolor">
+    
+    
+    <label for="myemail">Enter Email Address:</label>
+    <input type="email" id="myemail" required>
+    
+    <input type="submit" value="submit">
+
+</form>
+
+
+    </body>
+</html>
+
+
+
